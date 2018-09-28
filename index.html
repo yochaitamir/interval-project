@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href=https://stackpath.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -13,17 +14,41 @@
     <title>Document</title>
 </head>
 <body>
-    
-        <label>duration</label>
+    <audio id="pop">
+        <source src="bell.mp3" type="audio/mpeg">
+      </audio>
+        <!-- <label>duration</label>
         <input type=number id=duration placeholder="duration">
         <label>break</label>
         <input type=number id=break placeholder="break">
         <label>repetitions</label>
         <input type=number id=repetitions placeholder="repetitions">
-        <input type=submit id=submit value=start exercise>
-        
-    
-    <div id=timer></div>
+        -->
+      
     <script src=main.js></script>
+    <div class="jumbotron title">
+        <h3>welcome to your fitness exerciser!!!</h3>
+    </div>
+    <div class=container>
+    <div class="input-group input-group">
+        <span class="input-group-addon" id="sizing-addon1">duration</span>
+        <input type="number" id=duration class="form-control" placeholder="duration" aria-describedby="sizing-addon1">
+      </div><br>
+      
+      <div class="input-group">
+        <span class="input-group-addon" id="sizing-addon2">break</span>
+        <input type="number" id=break class="form-control" placeholder="break" aria-describedby="sizing-addon2">
+      </div><br>
+      
+      <div class="input-group input-group">
+        <span class="input-group-addon" id="sizing-addon3">repetitions</span>
+        <input type="number" id=repetitions class="form-control" placeholder="repetitions" aria-describedby="sizing-addon3">
+      </div><br>
+      <input type=submit id=submit class="btn btn-success" value=start exercise>
+         
+    
+      <div id=timer></div>
+      <div id=rounds></div>
+    </div>
 </body>
 </html>
